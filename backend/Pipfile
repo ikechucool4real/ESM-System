@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djoser = "*"
+djangorestframework = "*"
+djangorestframework-simplejwt = "*"
+django-cors-headers = "*"
+django-q = "*"
+django-compat = "*"
+mysqlclient = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
