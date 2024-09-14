@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: #435165;
+    margin: 0;
+}
+
+.loggedin {
+    background-color: #f3f4f7;
+}
+
+.loginbody {
+    margin: 0 auto;
+}
+
+.fontsize {
+    font-size: 40px;
+    color: #5b6574;
+}
+
+.header {
+  width: 400px;
+  margin: 10px auto;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.description {
+    max-width: 1400px; /* Set a max-width to center the content */
+    margin: 0 auto; /* Center the div horizontally */
+    padding: 0 15px; /* Add padding for small screens */
+    width: 700px
+}
+
+.description p {
+    line-height: 1.6; /* Adjust line-height for better readability */
+    font-size: 16px; /* Base font size */
+    text-align: justify;
+}
+
+.login, .register, .Participanttask{
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 50px auto;
+}
+.login h1, .register h1 {
+    text-align: center;
+    color: #5b6574;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+.login .links, .register .links {
+    display: flex;
+    padding: 0 15px;
+}
+.login .links a, .register .links a {
+    color: #adb2ba;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 0 10px 10px 10px;
+    font-weight: bold;
+}
+.login .links a:hover, .register .links a:hover {
+    color: #9da3ac;
+}
+.login .links a.active, .register .links a.active {
+    border-bottom: 3px solid #3274d6;
+    color: #3274d6;
+}
+.login form, .register form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+.login form label, .register form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #3274d6;
+    color: #ffffff;
+}
+.login form input[type="password"], .login form input[type="email"], .register form input[type="password"], .register form input[type="text"], .register form input[type="email"], .register form select[name="status"]  {
+    width: 310px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+.login form input[type="submit"], .register form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #3274d6;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+}
+.login form input[type="submit"]:hover, .register form input[type="submit"]:hover {
+    background-color: #2868c7;
+    transition: background-color 0.2s;
+}
+
+.register > form p {
+    color: #3274d6;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0
+}
+
+.navtop {
+    background-color: #2f3947;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+.navtop h1 {
+    font-size: 24px;
+    color: #eaebed;
+    margin: 0;
+}
+
+.navtop .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navtop .nav-links a {
+    text-decoration: none;
+    color: #c1c4c8;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navtop .nav-links a i {
+    margin-right: 8px;
+}
+
+.navtop .nav-links a:hover {
+    color: #eaebed;
+}
+
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+}
+.content h2{
+    margin: 0;
+    padding: 25px 0;
+    font-size: 22px;
+    border-bottom: 1px solid #e0e0e3;
+    color: #4a536e;
+}
+.content h1{
+    margin: 0;
+    padding: 25px 0;
+    font-size: 24px;
+    border-bottom: 1px solid #e0e0e3;
+    color: #4a536e;
+}
+.content > p, .content > div {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    margin: 25px 0;
+    padding: 25px;
+  background-color: #fff;
+}
+.content > h4 {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    margin: 25px 0;
+    padding: 25px;
+    color: #4a536e;
+    background-color: #fff;
+}
+.content > p table td, .content > div table td {
+  padding: 5px;
+  color: #4a536e;
+}
+.content > p table td:first-child, .content > div table td:first-child {
+  font-weight: bold;
+  color: #4a536e;
+  padding-right: 15px;
+}
+.equal-spacing-table{
+    width: 100%;
+    table-layout: fixed; /* Ensures equal spacing of columns */
+    border-collapse: collapse; /* Removes the space between borders */
+}
+.equal-spacing-table th, .equal-spacing-table td {
+    border: 1px solid #ddd; /* Adds border to table cells */
+    text-align: left; /* Aligns text to the left */
+    padding: 8px; /* Adds padding to cells */
+    word-wrap: break-word; /* Ensures long words break to the next line */
+    font-weight: bold;
+}
+.equal-spacing-table th {
+    background-color: #2f3947;
+    color: #fff /* Adds background color to header cells */
+}  
+
+.content > div p {
+  padding: 5px;
+  margin: 0 0 50px 0;
+  color: #4a536e;
+  font-weight: bold;
+}
+.content > div h3 {
+    padding: 5px;
+    margin: 0 0 10px 0;
+    color: #4a536e;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.content > div form select {
+    width: 800px;
+    height: 50px;
+    margin: 0 0 0 110px;
+    background-color: #2f3947;
+}
+
+.content > div form select[name="status"] {
+    width: 800px;
+    height: 50px;
+    margin: 0 0 0 100px;
+    background-color: #2f3947;
+}
+
+.content > div form select[name="frequency"] {
+    width: 800px;
+    height: 50px;
+    margin: 0 0 0 60px;
+    background-color: #2f3947;
+}
+
+.content > div form input[type="text"]{
+    width: 800px;
+    height: 50px;
+    margin: 0 0 0 100px;
+    background-color: #2f3947;
+}
+
+.content > div form input[name="taskname"]{
+    width: 800px;
+    height: 50px;
+    margin: 0 0 0 110px;
+    background-color: #2f3947;
+}
+
+
+.content > div form input[name="endDate"]{
+    width: 800px;
+    height: 50px;
+    margin: 0 0 0 70px;
+    background-color: #2f3947;
+}
+
+.content > div form input[name="startDate"]{
+    width: 800px;
+    height: 50px;
+    margin: 0 0 0 60px;
+    background-color: #2f3947;
+}
+
+.content > div form input[name="deliveryTime"]{
+    width: 800px;
+    height: 50px;
+    margin: 0 0 0 30px;
+    background-color: #2f3947;  
+}
+
+#newemail{
+    width: 800px;
+    height: 50px;
+    margin: 0 0 0 60px;
+    background-color: #2f3947;  
+}
+
+#newemail1{
+    width: 800px;
+    height: 50px;
+    margin: 0 0 0 80px;
+    background-color: #2f3947;  
+}
+#about, #question {
+    width: 800px;
+    height: 100px;
+    display: flex;
+    margin: 0 0 0 90px;
+    background-color: #2f3947;
+}
+
+#newquestion {
+    width: 800px;
+    height: 100px;
+    display: flex;
+    margin: 10px 0 0 50px;
+    background-color: #2f3947;
+}
+
+#answer {
+    width: 800px;
+    height: 100px;
+    display: flex;
+    margin: 10px 0 0 105px;
+    background-color: #2f3947;
+}
+
+#reply {
+    width: 800px;
+    height: 50px;
+    display: flex;
+    margin: 10px 0 0 115px;
+    background-color: #2f3947;
+}
+
+#status{
+    width: 800px;
+    height: 50px;
+    margin: 0 0 0 90px;
+    background-color: #2f3947;
+}
+
+.content > div form input[type="email"] {
+    width: 800px;
+    height: 50px;
+    margin: 0 0 0 35px;
+    display: flex;
+    background-color: #2f3947;
+}
+
+.content form input[type="submit"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #3274d6;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+    margin: 20px auto;;
+}
+
+.content input[type="submit"] {
+    padding: 15px;
+    background-color: #3274d6;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+    margin: 20px auto;;
+}
+
+.rounded-add {
+    text-align: right;
+    background-color:#3274d6; /* Button background color */
+    font-weight: bold;
+    color: #ffffff;
+    border: none; /* Remove default border */
+    padding: 10px 10px; /* Padding for the button */
+    margin: 20px 0 20px 0;
+    font-size: 16px; /* Font size */
+    border-radius: 10px; /* Round corners */
+    cursor: pointer; /* Cursor change on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+
